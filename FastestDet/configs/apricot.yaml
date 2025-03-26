@@ -1,0 +1,21 @@
+DATASET:
+  TRAIN: "datasets/apricot/images/train"
+  VAL: "datasets/apricot/images/val"
+  NAMES:
+    - apricot
+
+MODEL:
+  NC: 1
+  INPUT_WIDTH: 640
+  INPUT_HEIGHT: 640
+
+TRAIN:
+  LR: 0.001
+  THRESH: 0.25
+  WARMUP: true
+  BATCH_SIZE: 96
+  END_EPOCH: 300
+  MILESTONES:
+    - 100
+    - 200
+    - 250
